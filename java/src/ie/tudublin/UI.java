@@ -4,7 +4,10 @@ import processing.core.PApplet;
 
 public class UI extends PApplet
 {
-    Button b;
+    Button button1;
+	Button button2;
+	Button button3;
+	Button button4;
     MovingCircle mc;
 
     boolean[] keys = new boolean[1024];
@@ -34,14 +37,21 @@ public class UI extends PApplet
 
     public void setup()
     {
-        b = new Button(this, 50, 50, 100, 50, "I am a button");
+        button1 = new Button(this, 50, 50, 100, 50, "Demons");
+		button2 = new Button(this, 50, 250, 100, 50, "Downworlders");
+		button3 = new Button(this, 650, 50, 100, 50, "Runes");
+		button4 = new Button(this, 650, 250, 100, 50, "Shadowhunters");
+		
         mc = new MovingCircle(this, width / 2, height / 2, 50);
     }
 
     public void draw()
     {
         background(0);
-        b.render();
+        button1.render();
+		button2.render();
+		button3.render();
+		button4.render();
 
         mc.update();
         mc.render();
