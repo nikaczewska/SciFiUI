@@ -11,7 +11,19 @@ public class UI extends PApplet
 	Button button4;
     MovingCircle mc;
     PImage AngelicPower;
-    
+    PImage rune1;
+    PImage rune2;
+    PImage rune3;
+    PImage rune4;
+    PImage rune5;
+    PImage rune6;
+    PImage rune7;
+    PImage rune8;
+    PImage rune9;
+
+    int RuneWidth = 80;
+    int RuneHeight = 100;
+
 
     boolean[] keys = new boolean[1024];
 
@@ -46,6 +58,15 @@ public class UI extends PApplet
 		button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters");
 		
         AngelicPower = loadImage("Angelic_Power.PNG");
+        rune1 = loadImage("Abundance.PNG");
+        rune2 = loadImage("Acceleration.PNG");
+        rune3 = loadImage("Accuracy.PNG");
+        rune4 = loadImage("Action.PNG");
+        rune5 = loadImage("Agility.PNG");
+        rune6 = loadImage("Agony.PNG");
+        rune7 = loadImage("Allied_To.PNG");
+        rune8 = loadImage("Courage_In_Combat.PNG");
+        rune9 = loadImage("Clarity.PNG");
     }
 
     public void draw()
@@ -55,7 +76,17 @@ public class UI extends PApplet
         rect(200,50, width - 275, height - 150);
         stroke(63,133,255);
         rect(210,60, width - 295, height - 170);
-        image(AngelicPower, width - 200, 70, 100, 80);
+        image(AngelicPower, width - 200, 70, RuneHeight, RuneHeight);
+        image(rune1, 200, height - 90, RuneHeight,RuneWidth);
+        image(rune2, 300, height - 90, RuneHeight,RuneWidth);
+        image(rune3, 400, height - 90, RuneHeight, RuneWidth);
+        image(rune4, 500, height - 90, RuneHeight, RuneWidth);
+        image(rune5, 600, height - 90, RuneHeight,RuneWidth);
+        image(rune6, 700, height - 90, RuneHeight, RuneWidth);
+        image(rune7, 800, height - 90, RuneHeight, RuneWidth);
+        image(rune8, 900, height - 90, RuneHeight, RuneWidth);
+        image(rune9, 1000, height - 90, RuneHeight, RuneWidth);
+
         button1.render();
 		button2.render();
 		button3.render();
