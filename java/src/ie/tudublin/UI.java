@@ -30,31 +30,35 @@ public class UI extends PApplet
 
     public void settings()
     {
-        size(800, 800);
+        size(1200, 800);
         // Use fullscreen instead of size to make your interface fullscreen
         //fullScreen(); 
     }
 
     public void setup()
     {
-        button1 = new Button(this, 50, 50, 100, 50, "Demons");
-		button2 = new Button(this, 50, 250, 100, 50, "Downworlders");
-		button3 = new Button(this, 650, 50, 100, 50, "Runes");
-		button4 = new Button(this, 650, 250, 100, 50, "Shadowhunters");
+        button1 = new Button(this, 75, 70, 100, 50, "Demons");
+		button2 = new Button(this, 75, 270, 100, 50, "Downworlders");
+		button3 = new Button(this, 75, 470, 100, 50, "Runes");
+		button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters");
 		
-        mc = new MovingCircle(this, width / 2, height / 2, 50);
+        //mc = new MovingCircle(this, width / 2, height / 2, 50);
     }
 
     public void draw()
     {
         background(0);
+        stroke(66,206,244);
+        rect(200,50, width - 275, height - 100);
+        stroke(63,133,255);
+        rect(210,60, width - 295, height - 120);
         button1.render();
 		button2.render();
 		button3.render();
 		button4.render();
 
-        mc.update();
-        mc.render();
+        //mc.update();
+        //mc.render();
 
         if (checkKey(LEFT))
         {
