@@ -1,6 +1,7 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import processing.core.PImage;
 
 public class UI extends PApplet
 {
@@ -9,6 +10,8 @@ public class UI extends PApplet
 	Button button3;
 	Button button4;
     MovingCircle mc;
+    PImage AngelicPower;
+    
 
     boolean[] keys = new boolean[1024];
 
@@ -42,16 +45,17 @@ public class UI extends PApplet
 		button3 = new Button(this, 75, 470, 100, 50, "Runes");
 		button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters");
 		
-        //mc = new MovingCircle(this, width / 2, height / 2, 50);
+        AngelicPower = loadImage("Angelic_Power.PNG");
     }
 
     public void draw()
     {
         background(0);
         stroke(66,206,244);
-        rect(200,50, width - 275, height - 100);
+        rect(200,50, width - 275, height - 150);
         stroke(63,133,255);
-        rect(210,60, width - 295, height - 120);
+        rect(210,60, width - 295, height - 170);
+        image(AngelicPower, width - 200, 70, 100, 80);
         button1.render();
 		button2.render();
 		button3.render();
