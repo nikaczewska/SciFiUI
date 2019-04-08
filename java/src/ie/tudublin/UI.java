@@ -10,7 +10,7 @@ public class UI extends PApplet
 	Button button3;
     Button button4;
     NYCMap NycMap;
-    MovingCircle mc;
+
     PImage AngelicPower;
     PImage rune1;
     PImage rune2;
@@ -22,6 +22,13 @@ public class UI extends PApplet
     PImage rune8;
     PImage rune9;
     PImage nyc;
+    PImage demonAbbadon;
+    PImage demonBehemoth;
+    PImage demonForsaken;
+    PImage demonHunger;
+    PImage demonRaum;
+    PImage demonRavener;
+    PImage demonVermithrall;
 
     int RuneWidth = 80;
     int RuneHeight = 100;
@@ -70,6 +77,13 @@ public class UI extends PApplet
         rune8 = loadImage("Courage_In_Combat.PNG");
         rune9 = loadImage("Clarity.PNG");
         nyc = loadImage("NewYork.jpg");
+        demonAbbadon = loadImage("Demon_Abbadon.png");
+        demonBehemoth = loadImage("Demon_Behemoth.png");
+        demonForsaken = loadImage("Demon_Forsaken.png");
+        demonHunger = loadImage("Demon_Hunger.png");
+        demonRaum = loadImage("Demon_Raum.png");
+        demonRavener = loadImage("Demon_Ravener.jpg");
+        demonVermithrall = loadImage("Demon_Vermithrall.png");
 
         NycMap = new NYCMap(this, 212, 62, width - 295, height - 170, nyc);
     }
