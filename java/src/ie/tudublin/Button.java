@@ -31,4 +31,19 @@ public class Button
         ui.textAlign(PApplet.CENTER, PApplet.CENTER);
         ui.text(text, x , y );
     }
+
+    /*public void mouseClicked()
+    {
+        if(mouseX > x - width && mouseX < x + width)
+        {
+            if(mouseY > y - width && mouseY < y + width)
+            {
+                if(text == "Shadowhunters")
+                {
+
+                }
+
+            }
+        }
+    }*/
 }

@@ -61,11 +61,7 @@ public class UI extends PApplet
 
     public void setup()
     {
-        button3 = new Button(this, 75, 470, 100, 50, "Runes");
-        button1 = new Button(this, 75, 70, 100, 50, "Demons");
-		button2 = new Button(this, 75, 270, 100, 50, "Downworlders");
-        button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters");
-		
+        //Loading all rune images from data folder
         AngelicPower = loadImage("Angelic_Power.PNG");
         rune1 = loadImage("Abundance.PNG");
         rune2 = loadImage("Acceleration.PNG");
@@ -76,7 +72,9 @@ public class UI extends PApplet
         rune7 = loadImage("Allied_To.PNG");
         rune8 = loadImage("Courage_In_Combat.PNG");
         rune9 = loadImage("Clarity.PNG");
+        //Loading image of map from data folder
         nyc = loadImage("NewYork.jpg");
+        //Loading all demon images from data folder
         demonAbbadon = loadImage("Demon_Abbadon.png");
         demonBehemoth = loadImage("Demon_Behemoth.png");
         demonForsaken = loadImage("Demon_Forsaken.png");
@@ -86,6 +84,10 @@ public class UI extends PApplet
         demonVermithrall = loadImage("Demon_Vermithrall.png");
 
         NycMap = new NYCMap(this, 212, 62, width - 295, height - 170, nyc);
+        button1 = new Button(this, 75, 470, 100, 50, "Runes");
+        button2 = new Button(this, 75, 70, 100, 50, "Demons");
+		button3 = new Button(this, 75, 270, 100, 50, "Downworlders");
+        button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters");
     }
 
     public void draw()

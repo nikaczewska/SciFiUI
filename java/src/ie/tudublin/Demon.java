@@ -23,7 +23,12 @@ public class Demon
 
     public void render()
     {
+        ui.fill(255,0,0);
         ui.ellipse(x,y,radius,radius);
     }
 
+    public void mouseClicked()
+    {
+        
+    }
 }
