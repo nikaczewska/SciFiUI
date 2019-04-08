@@ -8,7 +8,8 @@ public class UI extends PApplet
     Button button1;
 	Button button2;
 	Button button3;
-	Button button4;
+    Button button4;
+    NYCMap NycMap;
     MovingCircle mc;
     PImage AngelicPower;
     PImage rune1;
@@ -20,6 +21,7 @@ public class UI extends PApplet
     PImage rune7;
     PImage rune8;
     PImage rune9;
+    PImage nyc;
 
     int RuneWidth = 80;
     int RuneHeight = 100;
@@ -55,7 +57,7 @@ public class UI extends PApplet
         button1 = new Button(this, 75, 70, 100, 50, "Demons");
 		button2 = new Button(this, 75, 270, 100, 50, "Downworlders");
 		button3 = new Button(this, 75, 470, 100, 50, "Runes");
-		button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters");
+        button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters");
 		
         AngelicPower = loadImage("Angelic_Power.PNG");
         rune1 = loadImage("Abundance.PNG");
@@ -67,6 +69,9 @@ public class UI extends PApplet
         rune7 = loadImage("Allied_To.PNG");
         rune8 = loadImage("Courage_In_Combat.PNG");
         rune9 = loadImage("Clarity.PNG");
+        nyc = loadImage("NewYork.jpg");
+
+        NycMap = new NYCMap(this, 210, 60, width - 295, height - 170, nyc);
     }
 
     public void draw()
@@ -90,7 +95,9 @@ public class UI extends PApplet
         button1.render();
 		button2.render();
 		button3.render();
-		button4.render();
+        button4.render();
+        
+        NycMap.render();
 
         //mc.update();
         //mc.render();
