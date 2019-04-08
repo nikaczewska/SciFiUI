@@ -28,10 +28,4 @@ public class NYCMap
         ui.image(nyc, x, y, width, height);
 
     }
-
-    public void update()
-    {
-
-    }
-
 }

@@ -54,9 +54,9 @@ public class UI extends PApplet
 
     public void setup()
     {
+        button3 = new Button(this, 75, 470, 100, 50, "Runes");
         button1 = new Button(this, 75, 70, 100, 50, "Demons");
 		button2 = new Button(this, 75, 270, 100, 50, "Downworlders");
-		button3 = new Button(this, 75, 470, 100, 50, "Runes");
         button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters");
 		
         AngelicPower = loadImage("Angelic_Power.PNG");
@@ -71,7 +71,7 @@ public class UI extends PApplet
         rune9 = loadImage("Clarity.PNG");
         nyc = loadImage("NewYork.jpg");
 
-        NycMap = new NYCMap(this, 210, 60, width - 295, height - 170, nyc);
+        NycMap = new NYCMap(this, 212, 62, width - 295, height - 170, nyc);
     }
 
     public void draw()
@@ -81,6 +81,7 @@ public class UI extends PApplet
         rect(200,50, width - 275, height - 150);
         stroke(63,133,255);
         rect(210,60, width - 295, height - 170);
+        NycMap.render();
         image(AngelicPower, width - 200, 70, RuneHeight, RuneHeight);
         image(rune1, 200, height - 90, RuneHeight,RuneWidth);
         image(rune2, 300, height - 90, RuneHeight,RuneWidth);
@@ -97,7 +98,7 @@ public class UI extends PApplet
 		button3.render();
         button4.render();
         
-        NycMap.render();
+        
 
         //mc.update();
         //mc.render();
