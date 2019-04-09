@@ -5,12 +5,14 @@ import processing.core.PImage;
 
 public class UI extends PApplet
 {
+    //Declaring variables to be used for class objects
     Button button1;
 	Button button2;
 	Button button3;
     Button button4;
     NYCMap NycMap;
 
+    //Declaring variables for images
     PImage AngelicPower;
     PImage rune1;
     PImage rune2;
@@ -24,12 +26,12 @@ public class UI extends PApplet
     PImage nyc;
     PImage demonAbbadon;
     PImage demonBehemoth;
-    PImage demonForsaken;
     PImage demonHunger;
     PImage demonRaum;
     PImage demonRavener;
     PImage demonVermithrall;
 
+    //Declaring variables for image height and width
     int RuneWidth = 80;
     int RuneHeight = 100;
 
@@ -77,17 +79,16 @@ public class UI extends PApplet
         //Loading all demon images from data folder
         demonAbbadon = loadImage("Demon_Abbadon.png");
         demonBehemoth = loadImage("Demon_Behemoth.png");
-        demonForsaken = loadImage("Demon_Forsaken.png");
         demonHunger = loadImage("Demon_Hunger.png");
         demonRaum = loadImage("Demon_Raum.png");
         demonRavener = loadImage("Demon_Ravener.jpg");
         demonVermithrall = loadImage("Demon_Vermithrall.png");
 
-        NycMap = new NYCMap(this, 212, 62, width - 295, height - 170, nyc);
-        button1 = new Button(this, 75, 470, 100, 50, "Runes");
-        button2 = new Button(this, 75, 70, 100, 50, "Demons");
-		button3 = new Button(this, 75, 270, 100, 50, "Downworlders");
-        button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters");
+        //NycMap = new NYCMap(this, 212, 62, width - 297, height - 172, nyc);
+        button1 = new Button(this, 75, 470, 100, 50, "Runes", nyc);
+        button2 = new Button(this, 75, 70, 100, 50, "Demons", nyc);
+		button3 = new Button(this, 75, 270, 100, 50, "Downworlders",nyc);
+        button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters",nyc);
     }
 
     public void draw()
@@ -97,7 +98,7 @@ public class UI extends PApplet
         rect(200,50, width - 275, height - 150);
         stroke(63,133,255);
         rect(210,60, width - 295, height - 170);
-        NycMap.render();
+        //NycMap.render();
         image(AngelicPower, width - 200, 70, RuneHeight, RuneHeight);
         image(rune1, 200, height - 90, RuneHeight,RuneWidth);
         image(rune2, 300, height - 90, RuneHeight,RuneWidth);

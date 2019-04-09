@@ -1,6 +1,7 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import processing.core.PImage;
 
 public class Button
 {
@@ -10,8 +11,10 @@ public class Button
     private float width;
     private float height;
     private String text;
+    NYCMap nycMap;
+    PImage nyc;
 
-    public Button(UI ui, float x, float y, float width, float height, String text)
+    public Button(UI ui, float x, float y, float width, float height, String text, PImage nyc)
     {
         this.ui = ui;
         this.x = x;
@@ -19,9 +22,11 @@ public class Button
         this.width = width;
         this.height = height;
         this.text = text;
+        this.nyc = nyc;
     }
 
-    public void render()
+
+	public void render()
     {
         ui.noFill();
         ui.stroke(66,206,244);
@@ -32,18 +37,19 @@ public class Button
         ui.text(text, x , y );
     }
 
-    /*public void mouseClicked()
+    public void mouseClicked()
     {
-        if(mouseX > x - width && mouseX < x + width)
+        if(ui.mouseX > x - width && ui.mouseX < x + width)
         {
-            if(mouseY > y - width && mouseY < y + width)
+            if(ui.mouseY > y - width && ui.mouseY < y + width)
             {
                 if(text == "Shadowhunters")
                 {
+                    nycMap = new NYCMap(ui, 212, 62, width - 297, height - 172, nyc);
 
                 }
 
             }
         }
-    }*/
+    }
 }
