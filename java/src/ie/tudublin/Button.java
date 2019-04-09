@@ -23,6 +23,8 @@ public class Button
         this.height = height;
         this.text = text;
         this.nyc = nyc;
+
+        
     }
 
 
@@ -39,17 +41,32 @@ public class Button
 
     public void mouseClicked()
     {
-        if(ui.mouseX > x - width && ui.mouseX < x + width)
+        if(ui.mouseX > x - width/2 && ui.mouseX < x + width/2 && ui.mouseY > y - width/2 && ui.mouseY < y + width/2)
         {
-            if(ui.mouseY > y - width && ui.mouseY < y + width)
-            {
+            //if(ui.mouseY > y - width && ui.mouseY < y + width)
+            //{
                 if(text == "Shadowhunters")
                 {
-                    nycMap = new NYCMap(ui, 212, 62, width - 297, height - 172, nyc);
+                    nycMap = new NYCMap(ui, 212, 62, 1200 - 297, 800 - 172, nyc);
+                    nycMap.render();
 
                 }
 
-            }
+                if(text == "Demons")
+                {
+                    nycMap = new NYCMap(ui, 212, 62, 1200 - 297, 800 - 172, nyc);
+                    nycMap.render();
+
+                }
+
+                if(text == "Downworlders")
+                {
+                    nycMap = new NYCMap(ui, 212, 62, 1200 - 297, 800 - 172, nyc);
+                    nycMap.render();
+
+                }
+
+            //}
         }
     }
 }

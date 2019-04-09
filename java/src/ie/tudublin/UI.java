@@ -114,6 +114,10 @@ public class UI extends PApplet
 		button2.render();
 		button3.render();
         button4.render();
+        button1.mouseClicked();
+        button2.mouseClicked();
+        button3.mouseClicked();
+        button4.mouseClicked();
         
         
 
