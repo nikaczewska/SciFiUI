@@ -148,6 +148,13 @@ public class UI extends PApplet
         Seelie_Queen = new Downworlder(this, loadImage("Seelie_Queen.png"));
         Raphael_Santiago = new Downworlder(this, loadImage("Raphael_Santiago.jpg"));
 
+        downworlders.add(Magnus_Bane);
+        downworlders.add(Maia);
+        downworlders.add(Luke_Garroway);
+        downworlders.add(Simon_Lewis);
+        downworlders.add(Seelie_Queen);
+        downworlders.add(Raphael_Santiago);
+
 
         //NycMap = new NYCMap(this, 212, 62, width - 297, height - 172, nyc);
         button1 = new Button(this, 75, 470, 100, 50, "Runes", nyc, black);
