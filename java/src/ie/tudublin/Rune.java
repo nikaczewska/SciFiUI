@@ -2,14 +2,14 @@ package ie.tudublin;
 
 import processing.core.PImage;
 
-public class Demon
+public class Rune
 {
     UI ui;
-    PImage demon;
+    PImage rune;
 
-    public Demon(UI ui, PImage demon)
+    public Rune(UI ui, PImage rune)
     {
         this.ui = ui;
-        this.demon = demon;
+        this.rune = rune;
     }
 }

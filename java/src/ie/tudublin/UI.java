@@ -9,10 +9,10 @@ public class UI extends PApplet
 {
     ArrayList<RedDot> redDots = new ArrayList<RedDot>();
     ArrayList<Button> buttons = new ArrayList<Button>();
-    ArrayList<PImage> runes = new ArrayList<PImage>();
-    ArrayList<PImage> demons = new ArrayList<PImage>();
-    ArrayList<PImage> shadowhunters = new ArrayList<PImage>();
-    ArrayList<PImage> downworlders = new ArrayList<PImage>();
+    ArrayList<Rune> runes = new ArrayList<Rune>();
+    ArrayList<Demon> demons = new ArrayList<Demon>();
+    ArrayList<Shadowhunter> shadowhunters = new ArrayList<Shadowhunter>();
+    ArrayList<Downworlder> downworlders = new ArrayList<Downworlder>();
 
     //Declaring variables to be used for class objects
     Button button1;
@@ -34,12 +34,17 @@ public class UI extends PApplet
     PImage rune9;
     PImage nyc;
     PImage black;
-    PImage demonAbbadon;
-    PImage demonBehemoth;
-    PImage demonHunger;
-    PImage demonRaum;
-    PImage demonRavener;
-    PImage demonVermithrall;
+    Demon demonAbbadon;
+    Demon demonBehemoth;
+    Demon demonHunger;
+    Demon demonRaum;
+    Demon demonRavener;
+    Demon demonVermithrall;
+    Shadowhunter Alec_Lightwood;
+    Shadowhunter Clary_Fray;
+    Shadowhunter Isabelle_Lightwood;
+    Shadowhunter Sebastian_Verlac;
+    Shadowhunter Valentine_Morgenstern;
 
     //Declaring variables for image height and width
     int RuneWidth = 80;
@@ -75,7 +80,7 @@ public class UI extends PApplet
     {
         //Loading all rune images from data folder
         AngelicPower = loadImage("Angelic_Power.PNG");
-        rune1 = loadImage("Abundance.PNG");
+        rune1 = new Rune(this,loadImage("Abundance.PNG"));
         rune2 = loadImage("Acceleration.PNG");
         rune3 = loadImage("Accuracy.PNG");
         rune4 = loadImage("Action.PNG");
@@ -87,13 +92,20 @@ public class UI extends PApplet
         //Loading image of map from data folder
         nyc = loadImage("NewYork.jpg");
         black = loadImage("black.png");
-        //Loading all demon images from data folder
-        demonAbbadon = loadImage("Demon_Abbadon.png");
-        demonBehemoth = loadImage("Demon_Behemoth.png");
-        demonHunger = loadImage("Demon_Hunger.png");
-        demonRaum = loadImage("Demon_Raum.png");
-        demonRavener = loadImage("Demon_Ravener.jpg");
-        demonVermithrall = loadImage("Demon_Vermithrall.png");
+        //Loading all demon images from data folder and adding the demon objects to demon arraylist
+        demonAbbadon = new Demon(this,loadImage("Demon_Abbadon.png"));
+        demonBehemoth = new Demon(this, loadImage("Demon_Behemoth.png"));
+        demonHunger = new Demon(this,loadImage("Demon_Hunger.png"));
+        demonRaum = new Demon(this,loadImage("Demon_Raum.png"));
+        demonRavener = new Demon(this,loadImage("Demon_Ravener.jpg"));
+        demonVermithrall = new Demon(this,loadImage("Demon_Vermithrall.png"));
+
+        demons.add(demonAbbadon);
+        demons.add(demonBehemoth);
+        demons.add(demonHunger);
+        demons.add(demonRaum);
+        demons.add(demonRavener);
+        demons.add(demonVermithrall);
 
         //NycMap = new NYCMap(this, 212, 62, width - 297, height - 172, nyc);
         button1 = new Button(this, 75, 470, 100, 50, "Runes", nyc, black);
@@ -121,14 +133,15 @@ public class UI extends PApplet
         image(rune8, 900, height - 90, RuneHeight, RuneWidth);
         image(rune9, 1000, height - 90, RuneHeight, RuneWidth);
 
-        button1.render();
-		button2.render();
-		button3.render();
-        button4.render();
         button1.mouseClicked();
         button2.mouseClicked();
         button3.mouseClicked();
         button4.mouseClicked();
+        button1.render();
+		button2.render();
+		button3.render();
+        button4.render();
+       
         
         
 
