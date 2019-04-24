@@ -51,6 +51,7 @@ public class UI extends PApplet
     Downworlder Luke_Garroway;
     Downworlder Seelie_Queen;
     Downworlder Simon_Lewis;
+    Downworlder Raphael_Santiago;
 
     //Declaring variables for image height and width
     int RuneWidth = 80;
@@ -139,6 +140,15 @@ public class UI extends PApplet
         shadowhunters.add(Sebastian_Verlac);
         shadowhunters.add(Valentine_Morgenstern);
 
+        //Loading all downworlder images from data folder and adding to downworlder arraylist
+        Magnus_Bane = new Downworlder(this,loadImage("Magnus_Bane.jpg"));
+        Maia = new Downworlder(this, loadImage("Maia.png"));
+        Luke_Garroway = new Downworlder(this, loadImage("Luke_Garroway.jpg"));
+        Simon_Lewis = new Downworlder(this, loadImage("Simon_Lewis.jpg"));
+        Seelie_Queen = new Downworlder(this, loadImage("Seelie_Queen.png"));
+        Raphael_Santiago = new Downworlder(this, loadImage("Raphael_Santiago.jpg"));
+
+
         //NycMap = new NYCMap(this, 212, 62, width - 297, height - 172, nyc);
         button1 = new Button(this, 75, 470, 100, 50, "Runes", nyc, black);
         button2 = new Button(this, 75, 70, 100, 50, "Demons", nyc, black);
@@ -155,15 +165,15 @@ public class UI extends PApplet
         rect(210,60, width - 295, height - 170);
         //NycMap.render();
         image(AngelicPower, width - 200, 70, RuneHeight, RuneHeight);
-        image(rune1, 200, height - 90, RuneHeight,RuneWidth);
-        image(rune2, 300, height - 90, RuneHeight,RuneWidth);
-        image(rune3, 400, height - 90, RuneHeight, RuneWidth);
-        image(rune4, 500, height - 90, RuneHeight, RuneWidth);
-        image(rune5, 600, height - 90, RuneHeight,RuneWidth);
-        image(rune6, 700, height - 90, RuneHeight, RuneWidth);
-        image(rune7, 800, height - 90, RuneHeight, RuneWidth);
-        image(rune8, 900, height - 90, RuneHeight, RuneWidth);
-        image(rune9, 1000, height - 90, RuneHeight, RuneWidth);
+        image(rune1.rune, 200, height - 90, RuneHeight,RuneWidth);
+        image(rune2.rune, 300, height - 90, RuneHeight,RuneWidth);
+        image(rune3.rune, 400, height - 90, RuneHeight, RuneWidth);
+        image(rune4.rune, 500, height - 90, RuneHeight, RuneWidth);
+        image(rune5.rune, 600, height - 90, RuneHeight,RuneWidth);
+        image(rune6.rune, 700, height - 90, RuneHeight, RuneWidth);
+        image(rune7.rune, 800, height - 90, RuneHeight, RuneWidth);
+        image(rune8.rune, 900, height - 90, RuneHeight, RuneWidth);
+        image(rune9.rune, 1000, height - 90, RuneHeight, RuneWidth);
 
         button1.mouseClicked();
         button2.mouseClicked();
