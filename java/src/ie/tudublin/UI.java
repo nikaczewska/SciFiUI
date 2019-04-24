@@ -86,14 +86,14 @@ public class UI extends PApplet
         //Loading all rune images from data folder
         AngelicPower = loadImage("Angelic_Power.PNG");
         rune1 = new Rune(this,loadImage("Abundance.PNG"));
-        rune2 = loadImage("Acceleration.PNG");
-        rune3 = loadImage("Accuracy.PNG");
-        rune4 = loadImage("Action.PNG");
-        rune5 = loadImage("Agility.PNG");
-        rune6 = loadImage("Agony.PNG");
-        rune7 = loadImage("Allied_To.PNG");
-        rune8 = loadImage("Courage_In_Combat.PNG");
-        rune9 = loadImage("Clarity.PNG");
+        rune2 = new Rune(this,loadImage("Acceleration.PNG"));
+        rune3 = new Rune(this,loadImage("Accuracy.PNG"));
+        rune4 = new Rune(this,loadImage("Action.PNG"));
+        rune5 = new Rune(this,loadImage("Agility.PNG"));
+        rune6 = new Rune(this,loadImage("Agony.PNG"));
+        rune7 = new Rune(this,loadImage("Allied_To.PNG"));
+        rune8 = new Rune(this,loadImage("Courage_In_Combat.PNG"));
+        rune9 = new Rune(this,loadImage("Clarity.PNG"));
         //Loading image of map from data folder
         nyc = loadImage("NewYork.jpg");
         black = loadImage("black.png");
