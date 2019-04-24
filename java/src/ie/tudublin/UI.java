@@ -141,12 +141,12 @@ public class UI extends PApplet
         shadowhunters.add(Valentine_Morgenstern);
 
         //Loading all downworlder images from data folder and adding to downworlder arraylist
-        Magnus_Bane = new Downworlder(this,loadImage("Magnus_Bane.jpg"));
-        Maia = new Downworlder(this, loadImage("Maia.png"));
-        Luke_Garroway = new Downworlder(this, loadImage("Luke_Garroway.jpg"));
-        Simon_Lewis = new Downworlder(this, loadImage("Simon_Lewis.jpg"));
-        Seelie_Queen = new Downworlder(this, loadImage("Seelie_Queen.png"));
-        Raphael_Santiago = new Downworlder(this, loadImage("Raphael_Santiago.jpg"));
+        Magnus_Bane = new Downworlder(this,loadImage("Magnus_Bane.jpg"),"Magnus Bane","Warlock");
+        Maia = new Downworlder(this, loadImage("Maia.png"),"Maia","Werewolf");
+        Luke_Garroway = new Downworlder(this, loadImage("Luke_Garroway.jpg"),"Luke Garroway","Werewolf");
+        Simon_Lewis = new Downworlder(this, loadImage("Simon_Lewis.jpg"),"Simon_Lewis","Vampire");
+        Seelie_Queen = new Downworlder(this, loadImage("Seelie_Queen.png"),"Seelie Queen","Faerie");
+        Raphael_Santiago = new Downworlder(this, loadImage("Raphael_Santiago.jpg"),"Raphael Santiago","Vampire");
 
         downworlders.add(Magnus_Bane);
         downworlders.add(Maia);
