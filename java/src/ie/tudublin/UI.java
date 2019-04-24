@@ -43,6 +43,7 @@ public class UI extends PApplet
     Shadowhunter Alec_Lightwood;
     Shadowhunter Clary_Fray;
     Shadowhunter Isabelle_Lightwood;
+    Shadowhunter Jace_Wayland;
     Shadowhunter Sebastian_Verlac;
     Shadowhunter Valentine_Morgenstern;
     Downworlder Magnus_Bane;
@@ -122,6 +123,14 @@ public class UI extends PApplet
         demons.add(demonRaum);
         demons.add(demonRavener);
         demons.add(demonVermithrall);
+
+        //Loading all shadowhunter images from data folder and adding to shadowhunter arraylist
+        Alec_Lightwood = new Shadowhunter(this, loadImage("Alec_Lightwood.jpg"));
+        Clary_Fray =  new Shadowhunter(this, loadImage("Clary_Fray.jpg"));
+        Isabelle_Lightwood =  new Shadowhunter(this, loadImage("Isabelle_Lightwood.jpg"));
+        Jace_Wayland =  new Shadowhunter(this, loadImage("Jace_Wayland.jpg"));
+        Sebastian_Verlac =  new Shadowhunter(this, loadImage("Sebastian_Verlac.jpg"));
+        Valentine_Morgenstern =  new Shadowhunter(this, loadImage("Valentine_Morgenstern.jpg"));
 
         //NycMap = new NYCMap(this, 212, 62, width - 297, height - 172, nyc);
         button1 = new Button(this, 75, 470, 100, 50, "Runes", nyc, black);
