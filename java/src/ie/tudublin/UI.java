@@ -83,7 +83,7 @@ public class UI extends PApplet
 
     public void setup()
     {
-        //Loading all rune images from data folder
+        //Loading all rune images from data folder and adding to rune arraylist
         AngelicPower = loadImage("Angelic_Power.PNG");
         rune1 = new Rune(this,loadImage("Abundance.PNG"));
         rune2 = new Rune(this,loadImage("Acceleration.PNG"));
@@ -94,6 +94,17 @@ public class UI extends PApplet
         rune7 = new Rune(this,loadImage("Allied_To.PNG"));
         rune8 = new Rune(this,loadImage("Courage_In_Combat.PNG"));
         rune9 = new Rune(this,loadImage("Clarity.PNG"));
+
+        runes.add(rune1);
+        runes.add(rune2);
+        runes.add(rune3);
+        runes.add(rune4);
+        runes.add(rune5);
+        runes.add(rune6);
+        runes.add(rune7);
+        runes.add(rune8);
+        runes.add(rune9);
+
         //Loading image of map from data folder
         nyc = loadImage("NewYork.jpg");
         black = loadImage("black.png");
