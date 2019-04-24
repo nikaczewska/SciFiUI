@@ -25,7 +25,9 @@ public class NYCMap
 
     public void render()
     {
+        ui.pushMatrix();
         ui.image(nyc, x, y, width, height);
+        ui.popMatrix();
 
     }
 }

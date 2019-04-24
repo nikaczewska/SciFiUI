@@ -27,7 +27,7 @@ public class Button
         
     }
 
-
+    int click = 0;
 	public void render()
     {
         ui.noFill();
@@ -37,36 +37,41 @@ public class Button
         ui.ellipse(x, y, width-10, width-10);
         ui.textAlign(PApplet.CENTER, PApplet.CENTER);
         ui.text(text, x , y );
+        if(click > 0 && click < 4)
+        {
+            nycMap = new NYCMap(ui, 212, 62, 1200 - 297, 800 - 172, nyc);
+            nycMap.render();
+        }
     }
 
     public void mouseClicked()
     {
         if(ui.mouseX > x - width/2 && ui.mouseX < x + width/2 && ui.mouseY > y - width/2 && ui.mouseY < y + width/2)
         {
-            //if(ui.mouseY > y - width && ui.mouseY < y + width)
-            //{
+            if(ui.mouseY > y - width && ui.mouseY < y + width)
+            {
                 if(text == "Shadowhunters")
                 {
-                    nycMap = new NYCMap(ui, 212, 62, 1200 - 297, 800 - 172, nyc);
-                    nycMap.render();
-
+                    click = 1;
                 }
 
                 if(text == "Demons")
                 {
-                    nycMap = new NYCMap(ui, 212, 62, 1200 - 297, 800 - 172, nyc);
-                    nycMap.render();
-
+                    click = 2;
                 }
 
                 if(text == "Downworlders")
                 {
-                    nycMap = new NYCMap(ui, 212, 62, 1200 - 297, 800 - 172, nyc);
-                    nycMap.render();
-
+                    click = 3;
                 }
 
-            //}
+                if(text == "Runes")
+                {
+                    click = 4;
+                }
+
+               
+            }
         }
     }
 }
