@@ -13,8 +13,9 @@ public class Button
     private String text;
     NYCMap nycMap;
     PImage nyc;
+    PImage black;
 
-    public Button(UI ui, float x, float y, float width, float height, String text, PImage nyc)
+    public Button(UI ui, float x, float y, float width, float height, String text, PImage nyc, PImage black)
     {
         this.ui = ui;
         this.x = x;
@@ -23,11 +24,13 @@ public class Button
         this.height = height;
         this.text = text;
         this.nyc = nyc;
+        this.black = black;
 
         
     }
 
     int click = 0;
+    int type = 0;
 	public void render()
     {
         ui.noFill();
@@ -53,23 +56,26 @@ public class Button
                 if(text == "Shadowhunters")
                 {
                     click = 1;
+                    type = 1;
                 }
 
                 if(text == "Demons")
                 {
                     click = 2;
+                    type = 3;
                 }
 
                 if(text == "Downworlders")
                 {
                     click = 3;
+                    type = 2;
                 }
 
                 if(text == "Runes")
                 {
                     click = 4;
+                    type = 4;
                 }
-
                
             }
         }

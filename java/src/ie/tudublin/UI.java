@@ -1,10 +1,19 @@
 package ie.tudublin;
 
+import java.util.ArrayList;
+
 import processing.core.PApplet;
 import processing.core.PImage;
 
 public class UI extends PApplet
 {
+    ArrayList<RedDot> redDots = new ArrayList<RedDot>();
+    ArrayList<Button> buttons = new ArrayList<Button>();
+    ArrayList<PImage> runes = new ArrayList<PImage>();
+    ArrayList<PImage> demons = new ArrayList<PImage>();
+    ArrayList<PImage> shadowhunters = new ArrayList<PImage>();
+    ArrayList<PImage> downworlders = new ArrayList<PImage>();
+
     //Declaring variables to be used for class objects
     Button button1;
 	Button button2;
@@ -12,7 +21,7 @@ public class UI extends PApplet
     Button button4;
     NYCMap NycMap;
 
-    //Declaring variables for images
+    //Declaring variables for images and adding them to the correct array lists
     PImage AngelicPower;
     PImage rune1;
     PImage rune2;
@@ -24,6 +33,7 @@ public class UI extends PApplet
     PImage rune8;
     PImage rune9;
     PImage nyc;
+    PImage black;
     PImage demonAbbadon;
     PImage demonBehemoth;
     PImage demonHunger;
@@ -76,6 +86,7 @@ public class UI extends PApplet
         rune9 = loadImage("Clarity.PNG");
         //Loading image of map from data folder
         nyc = loadImage("NewYork.jpg");
+        black = loadImage("black.png");
         //Loading all demon images from data folder
         demonAbbadon = loadImage("Demon_Abbadon.png");
         demonBehemoth = loadImage("Demon_Behemoth.png");
@@ -85,10 +96,10 @@ public class UI extends PApplet
         demonVermithrall = loadImage("Demon_Vermithrall.png");
 
         //NycMap = new NYCMap(this, 212, 62, width - 297, height - 172, nyc);
-        button1 = new Button(this, 75, 470, 100, 50, "Runes", nyc);
-        button2 = new Button(this, 75, 70, 100, 50, "Demons", nyc);
-		button3 = new Button(this, 75, 270, 100, 50, "Downworlders",nyc);
-        button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters",nyc);
+        button1 = new Button(this, 75, 470, 100, 50, "Runes", nyc, black);
+        button2 = new Button(this, 75, 70, 100, 50, "Demons", nyc, black);
+		button3 = new Button(this, 75, 270, 100, 50, "Downworlders",nyc, black);
+        button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters",nyc, black);
     }
 
     public void draw()
@@ -129,5 +140,7 @@ public class UI extends PApplet
             System.out.println("Left arrow key pressed");
         }
     }
+
+    
 }
 
