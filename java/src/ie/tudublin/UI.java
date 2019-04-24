@@ -23,15 +23,15 @@ public class UI extends PApplet
 
     //Declaring variables for images and adding them to the correct array lists
     PImage AngelicPower;
-    PImage rune1;
-    PImage rune2;
-    PImage rune3;
-    PImage rune4;
-    PImage rune5;
-    PImage rune6;
-    PImage rune7;
-    PImage rune8;
-    PImage rune9;
+    Rune rune1;
+    Rune rune2;
+    Rune rune3;
+    Rune rune4;
+    Rune rune5;
+    Rune rune6;
+    Rune rune7;
+    Rune rune8;
+    Rune rune9;
     PImage nyc;
     PImage black;
     Demon demonAbbadon;
@@ -45,6 +45,11 @@ public class UI extends PApplet
     Shadowhunter Isabelle_Lightwood;
     Shadowhunter Sebastian_Verlac;
     Shadowhunter Valentine_Morgenstern;
+    Downworlder Magnus_Bane;
+    Downworlder Maia;
+    Downworlder Luke_Garroway;
+    Downworlder Seelie_Queen;
+    Downworlder Simon_Lewis;
 
     //Declaring variables for image height and width
     int RuneWidth = 80;
