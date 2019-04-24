@@ -132,6 +132,13 @@ public class UI extends PApplet
         Sebastian_Verlac =  new Shadowhunter(this, loadImage("Sebastian_Verlac.jpg"));
         Valentine_Morgenstern =  new Shadowhunter(this, loadImage("Valentine_Morgenstern.jpg"));
 
+        shadowhunters.add(Alec_Lightwood);
+        shadowhunters.add(Clary_Fray);
+        shadowhunters.add(Isabelle_Lightwood);
+        shadowhunters.add(Jace_Wayland);
+        shadowhunters.add(Sebastian_Verlac);
+        shadowhunters.add(Valentine_Morgenstern);
+
         //NycMap = new NYCMap(this, 212, 62, width - 297, height - 172, nyc);
         button1 = new Button(this, 75, 470, 100, 50, "Runes", nyc, black);
         button2 = new Button(this, 75, 70, 100, 50, "Demons", nyc, black);
