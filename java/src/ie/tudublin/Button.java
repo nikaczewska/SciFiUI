@@ -40,6 +40,10 @@ public class Button
         ui.ellipse(x, y, width-10, width-10);
         ui.textAlign(PApplet.CENTER, PApplet.CENTER);
         ui.text(text, x , y );
+    }
+
+    public void update()
+    {
         if(click == 1)
         {
             nycMap = new NYCMap(ui, 212, 62, 1200 - 297, 800 - 172, nyc);

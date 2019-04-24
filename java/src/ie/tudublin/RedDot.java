@@ -21,4 +21,9 @@ public class RedDot
         this.type = type;
         this.pic = pic;
     }
+
+    public void render()
+    {
+        
+    }
 }

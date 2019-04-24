@@ -14,6 +14,12 @@ public class UI extends PApplet
     ArrayList<Shadowhunter> shadowhunters = new ArrayList<Shadowhunter>();
     ArrayList<Downworlder> downworlders = new ArrayList<Downworlder>();
 
+    int buttonX = 75;
+    int buttonY = 70;
+    int gap = 200;
+    int buttonWidth = 100;
+    int buttonHeight = 50;
+
     //Declaring variables to be used for class objects
     Button button1;
 	Button button2;
@@ -78,9 +84,7 @@ public class UI extends PApplet
 
     public void settings()
     {
-        size(1200, 800);
-        // Use fullscreen instead of size to make your interface fullscreen
-        //fullScreen(); 
+        size(1200, 800); 
     }
 
     public void setup()
@@ -155,12 +159,17 @@ public class UI extends PApplet
         downworlders.add(Seelie_Queen);
         downworlders.add(Raphael_Santiago);
 
+        //Initialising buttons and adding to arraylist
+       
+        button1 = new Button(this, buttonX, buttonY + (gap*2), buttonWidth, buttonHeight, "Runes", nyc, black);
+        button2 = new Button(this, buttonX, buttonY, buttonWidth, buttonHeight,"Demons", nyc, black);
+		button3 = new Button(this, buttonX, buttonY + gap, buttonWidth, buttonHeight, "Downworlders",nyc, black);
+        button4 = new Button(this, buttonX, buttonY + (gap*3), buttonWidth, buttonHeight, "Shadowhunters",nyc, black);
 
-        //NycMap = new NYCMap(this, 212, 62, width - 297, height - 172, nyc);
-        button1 = new Button(this, 75, 470, 100, 50, "Runes", nyc, black);
-        button2 = new Button(this, 75, 70, 100, 50, "Demons", nyc, black);
-		button3 = new Button(this, 75, 270, 100, 50, "Downworlders",nyc, black);
-        button4 = new Button(this, 75, 670, 100, 50, "Shadowhunters",nyc, black);
+        buttons.add(button1);
+        buttons.add(button2);
+        buttons.add(button3);
+        buttons.add(button4);
     }
 
     public void draw()
@@ -190,6 +199,10 @@ public class UI extends PApplet
 		button2.render();
 		button3.render();
         button4.render();
+        button1.update();
+        button2.update();
+        button3.update();
+        button4.update();
        
         
         
