@@ -129,12 +129,12 @@ public class UI extends PApplet
         demons.add(demonVermithrall);
 
         //Loading all shadowhunter images from data folder and adding to shadowhunter arraylist
-        Alec_Lightwood = new Shadowhunter(this, loadImage("Alec_Lightwood.jpg"));
-        Clary_Fray =  new Shadowhunter(this, loadImage("Clary_Fray.jpg"));
-        Isabelle_Lightwood =  new Shadowhunter(this, loadImage("Isabelle_Lightwood.jpg"));
-        Jace_Wayland =  new Shadowhunter(this, loadImage("Jace_Wayland.jpg"));
-        Sebastian_Verlac =  new Shadowhunter(this, loadImage("Sebastian_Verlac.jpg"));
-        Valentine_Morgenstern =  new Shadowhunter(this, loadImage("Valentine_Morgenstern.jpg"));
+        Alec_Lightwood = new Shadowhunter(this, loadImage("Alec_Lightwood.jpg"), "Alec Lightwood", "Shadowhunter");
+        Clary_Fray =  new Shadowhunter(this, loadImage("Clary_Fray.jpg"), "Clary Fray", "Shadowhunter");
+        Isabelle_Lightwood =  new Shadowhunter(this, loadImage("Isabelle_Lightwood.jpg"), "Isabelle Lightwood", "Shadowhunter");
+        Jace_Wayland =  new Shadowhunter(this, loadImage("Jace_Wayland.jpg"), "Jace Wayland", "Shadowhunter");
+        Sebastian_Verlac =  new Shadowhunter(this, loadImage("Sebastian_Verlac.jpg"), "Sebastian Verlac", "Shadowhunter");
+        Valentine_Morgenstern =  new Shadowhunter(this, loadImage("Valentine_Morgenstern.jpg"), "Valentine Morgenstern", "Shadowhunter");
 
         shadowhunters.add(Alec_Lightwood);
         shadowhunters.add(Clary_Fray);
@@ -175,7 +175,7 @@ public class UI extends PApplet
         rect(200,50, width - 275, height - 150);
         stroke(63,133,255);
         rect(210,60, width - 295, height - 170);
-        //NycMap.render();
+
         image(AngelicPower, width - 200, 70, RuneHeight, RuneHeight);
         image(rune1.rune, 200, height - 90, RuneHeight,RuneWidth);
         image(rune2.rune, 300, height - 90, RuneHeight,RuneWidth);
@@ -202,20 +202,6 @@ public class UI extends PApplet
         button3.update();
         button4.update();
 
-        
-
-        
-       
-        
-        
-
-        //mc.update();
-        //mc.render();
-
-        if (checkKey(LEFT))
-        {
-            System.out.println("Left arrow key pressed");
-        }
     }
 
     

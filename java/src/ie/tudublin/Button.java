@@ -98,6 +98,13 @@ public class Button
             sDot5.render();
             sDot6.render();
 
+            sDot1.mouseClicked();
+            sDot2.mouseClicked();
+            sDot3.mouseClicked();
+            sDot4.mouseClicked();
+            sDot5.mouseClicked();
+            sDot6.mouseClicked();
+
         }
 
         if(click == 2)
@@ -105,12 +112,12 @@ public class Button
             redDots.clear();
             nycMap = new NYCMap(ui, 212, 62, 1200 - 297, 800 - 172, nyc);
             nycMap.render();
-            DemonDot1 = new RedDot(ui, type, 350, 200,1);
-            DemonDot2 = new RedDot(ui, type,500, 350,2);
-            DemonDot3 = new RedDot(ui, type, 515, 320,3);
-            DemonDot4 = new RedDot(ui, type, 675, 400,4);
-            DemonDot5 = new RedDot(ui, type, 625, 225,5);
-            DemonDot6 = new RedDot(ui, type, 700, 115,6);
+            DemonDot1 = new RedDot(ui, type, 350, 200,0);
+            DemonDot2 = new RedDot(ui, type,500, 350,1);
+            DemonDot3 = new RedDot(ui, type, 515, 320,2);
+            DemonDot4 = new RedDot(ui, type, 675, 400,3);
+            DemonDot5 = new RedDot(ui, type, 625, 225,4);
+            DemonDot6 = new RedDot(ui, type, 700, 115,5);
 
             redDots.add(DemonDot1);
             redDots.add(DemonDot2);
@@ -125,6 +132,13 @@ public class Button
             DemonDot4.render();
             DemonDot5.render();
             DemonDot6.render();
+
+            DemonDot1.mouseClicked();
+            DemonDot2.mouseClicked();
+            DemonDot3.mouseClicked();
+            DemonDot4.mouseClicked();
+            DemonDot5.mouseClicked();
+            DemonDot6.mouseClicked();
             
            
         }
@@ -155,10 +169,17 @@ public class Button
             dDot4.render();
             dDot5.render();
             dDot6.render();
+
+            dDot1.mouseClicked();
+            dDot2.mouseClicked();
+            dDot3.mouseClicked();
+            dDot4.mouseClicked();
+            dDot5.mouseClicked();
+            dDot6.mouseClicked();
            
         }
 
-        if(click == 4)
+        else if(click == 4)
         {
             ui.image(black, 212, 62, 1200-297, 800-172);
            
