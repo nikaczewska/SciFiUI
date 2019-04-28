@@ -44,6 +44,10 @@ public class RedDot
                     ui.fill(0);
                     ui.rect(ui.width- 988, ui.height - 250, ui.width - 295, ui.height - 660);
                     ui.image(ui.shadowhunters.get(pos).shadowhunter, ui.width - 988, ui.height - 250, 150,140);
+                    ui.textAlign(PApplet.LEFT,PApplet.LEFT);
+                    ui.fill(255);
+                    ui.text(("Name: " + ui.shadowhunters.get(pos).name), 500, 600);
+                    ui.text(("Class: " + ui.shadowhunters.get(pos).type), 500, 620);
                 }
 
                 if(type == 2)
@@ -51,6 +55,13 @@ public class RedDot
                     ui.fill(0);
                     ui.rect(ui.width- 988, ui.height - 250, ui.width - 295, ui.height - 660);
                     ui.image(ui.demons.get(pos).demon, ui.width - 988, ui.height - 250, 150,140);
+                    ui.stroke(255);
+                    ui.textAlign(PApplet.LEFT,PApplet.LEFT);
+                    ui.fill(255);
+                    ui.text(("Name: " + ui.demons.get(pos).name), 500, 600);
+                    ui.text(("Class: " + ui.demons.get(pos).type), 500, 620);
+                }
+                    
                 }
 
                 if(type == 3)
@@ -58,6 +69,11 @@ public class RedDot
                     ui.fill(0);
                     ui.rect(ui.width- 988, ui.height - 250, ui.width - 295, ui.height - 660);
                     ui.image(ui.downworlders.get(pos).downworlder, ui.width - 988, ui.height - 250, 150,140);
+                    ui.textAlign(PApplet.LEFT,PApplet.LEFT);
+                    ui.fill(255);
+                    ui.text(("Name: " + ui.downworlders.get(pos).name), 500, 600);
+                    ui.text(("Class: " + ui.downworlders.get(pos).type), 500, 620);
+                }
                 }
             }
         }
