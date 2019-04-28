@@ -38,6 +38,7 @@ public class Button
         ui.ellipse(x, y, width, width);
         ui.stroke(63,133,255);
         ui.ellipse(x, y, width-10, width-10);
+        ui.fill(255);
         ui.textAlign(PApplet.CENTER, PApplet.CENTER);
         ui.text(text, x , y );
     }

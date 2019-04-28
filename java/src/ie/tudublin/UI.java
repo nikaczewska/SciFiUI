@@ -8,7 +8,6 @@ import processing.core.PImage;
 public class UI extends PApplet
 {
     ArrayList<RedDot> redDots = new ArrayList<RedDot>();
-    ArrayList<Button> buttons = new ArrayList<Button>();
     ArrayList<Rune> runes = new ArrayList<Rune>();
     ArrayList<Demon> demons = new ArrayList<Demon>();
     ArrayList<Shadowhunter> shadowhunters = new ArrayList<Shadowhunter>();
@@ -25,6 +24,7 @@ public class UI extends PApplet
 	Button button2;
 	Button button3;
     Button button4;
+    RedDot DemonDot1;
     NYCMap NycMap;
 
     //Declaring variables for images and adding them to the correct array lists
@@ -159,23 +159,23 @@ public class UI extends PApplet
         downworlders.add(Seelie_Queen);
         downworlders.add(Raphael_Santiago);
 
-        //Initialising buttons and adding to arraylist
+        //Initialising buttons
        
         button1 = new Button(this, buttonX, buttonY + (gap*2), buttonWidth, buttonHeight, "Runes", nyc, black);
         button2 = new Button(this, buttonX, buttonY, buttonWidth, buttonHeight,"Demons", nyc, black);
 		button3 = new Button(this, buttonX, buttonY + gap, buttonWidth, buttonHeight, "Downworlders",nyc, black);
         button4 = new Button(this, buttonX, buttonY + (gap*3), buttonWidth, buttonHeight, "Shadowhunters",nyc, black);
 
-        buttons.add(button1);
-        buttons.add(button2);
-        buttons.add(button3);
-        buttons.add(button4);
+        //Initialising red dots
+        //Demons
+        DemonDot1 = new RedDot(this, 2);
     }
 
     public void draw()
     {
         background(0);
         stroke(66,206,244);
+        fill(0);
         rect(200,50, width - 275, height - 150);
         stroke(63,133,255);
         rect(210,60, width - 295, height - 170);
@@ -191,6 +191,8 @@ public class UI extends PApplet
         image(rune8.rune, 900, height - 90, RuneHeight, RuneWidth);
         image(rune9.rune, 1000, height - 90, RuneHeight, RuneWidth);
 
+
+        
         button1.mouseClicked();
         button2.mouseClicked();
         button3.mouseClicked();
@@ -203,6 +205,11 @@ public class UI extends PApplet
         button2.update();
         button3.update();
         button4.update();
+        DemonDot1.render();
+
+        
+
+        
        
         
         
