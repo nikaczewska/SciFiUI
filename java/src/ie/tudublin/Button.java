@@ -1,7 +1,6 @@
 package ie.tudublin;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import processing.core.PApplet;
 import processing.core.PImage;
@@ -13,7 +12,6 @@ public class Button
     private float x;
     private float y;
     private float width;
-    private float height;
     private String text;
     NYCMap nycMap;
     PImage nyc;
@@ -39,24 +37,19 @@ public class Button
     RedDot dDot4;
     RedDot dDot5;
     RedDot dDot6;
-    
 
-
-    public Button(UI ui, float x, float y, float width, float height, String text, PImage nyc, PImage black)
+    public Button(UI ui, int x, int y, int width, String text, PImage nyc, PImage black) 
     {
         this.ui = ui;
         this.x = x;
         this.y = y;
         this.width = width;
-        this.height = height;
         this.text = text;
         this.nyc = nyc;
         this.black = black;
+	}
 
-        
-    }
-
-    int click = 0;
+	int click = 0;
     int type = 0;
 	public void render()
     {

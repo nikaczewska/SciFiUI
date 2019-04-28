@@ -74,9 +74,7 @@ public class RedDot
                     ui.text(("Name: " + ui.downworlders.get(pos).name), 500, 600);
                     ui.text(("Class: " + ui.downworlders.get(pos).type), 500, 620);
                 }
-                }
+                
             }
         }
-    }
-
 }
