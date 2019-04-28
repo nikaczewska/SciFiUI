@@ -6,17 +6,20 @@ import processing.core.PImage;
 public class RedDot
 {
     UI ui;
-    private float x;
-    private float y;
     private float radius = 20;
+    private int x;
+    private int y;
+    private int pos;
     private int type; //1 is for Shadowhunters, 2 is for Demons, 3 is for Downworlders, 4 is for Runes
     PImage pic;
 
-    public RedDot(UI ui,int type)
+    public RedDot(UI ui,int type, int x, int y, int pos)
     {
         this.ui = ui;
         this.type = type;
-        this.pic = pic;
+        this.x = x;
+        this.y = y;
+        this.pos = pos;
     }
 
     public void render()
@@ -24,13 +27,8 @@ public class RedDot
         ui.pushMatrix();
         ui.noStroke();
         ui.fill(255,0,0);
-        ui.ellipse(250,250, radius, radius);
+        ui.ellipse(x,y, radius, radius);
         ui.popMatrix();
     }
 
-    public void mouseClicked()
-    {
-        if(ui.mouseX )
-
-    }
 }

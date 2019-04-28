@@ -7,7 +7,7 @@ import processing.core.PImage;
 
 public class UI extends PApplet
 {
-    ArrayList<RedDot> redDots = new ArrayList<RedDot>();
+
     ArrayList<Rune> runes = new ArrayList<Rune>();
     ArrayList<Demon> demons = new ArrayList<Demon>();
     ArrayList<Shadowhunter> shadowhunters = new ArrayList<Shadowhunter>();
@@ -24,7 +24,6 @@ public class UI extends PApplet
 	Button button2;
 	Button button3;
     Button button4;
-    RedDot DemonDot1;
     NYCMap NycMap;
 
     //Declaring variables for images and adding them to the correct array lists
@@ -166,9 +165,6 @@ public class UI extends PApplet
 		button3 = new Button(this, buttonX, buttonY + gap, buttonWidth, buttonHeight, "Downworlders",nyc, black);
         button4 = new Button(this, buttonX, buttonY + (gap*3), buttonWidth, buttonHeight, "Shadowhunters",nyc, black);
 
-        //Initialising red dots
-        //Demons
-        DemonDot1 = new RedDot(this, 2);
     }
 
     public void draw()
@@ -205,7 +201,6 @@ public class UI extends PApplet
         button2.update();
         button3.update();
         button4.update();
-        DemonDot1.render();
 
         
 
