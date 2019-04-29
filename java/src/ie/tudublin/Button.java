@@ -16,6 +16,11 @@ public class Button
     NYCMap nycMap;
     PImage nyc;
     PImage black;
+
+    int mapX = 212;
+    int mapY = 62;
+    int mapWidth = 1200 - 297;
+    int mapHeight = 800 - 172;
     //Dots for Demons
     RedDot DemonDot1;
     RedDot DemonDot2;
@@ -68,7 +73,7 @@ public class Button
         if(click == 1)
         {
             redDots.clear();
-            nycMap = new NYCMap(ui, 212, 62, 1200 - 297, 800 - 172, nyc);
+            nycMap = new NYCMap(ui, mapX, mapY, mapWidth, mapHeight, nyc);
             nycMap.render();
             sDot1 = new RedDot(ui,type, 525, 300,0);
             sDot2 = new RedDot(ui, type, 400, 215,1);
@@ -103,7 +108,7 @@ public class Button
         if(click == 2)
         {
             redDots.clear();
-            nycMap = new NYCMap(ui, 212, 62, 1200 - 297, 800 - 172, nyc);
+            nycMap = new NYCMap(ui, mapX, mapY, mapWidth, mapHeight, nyc);
             nycMap.render();
             DemonDot1 = new RedDot(ui, type, 350, 200,0);
             DemonDot2 = new RedDot(ui, type,500, 350,1);
@@ -139,7 +144,7 @@ public class Button
         if(click == 3)
         {
             redDots.clear();
-            nycMap = new NYCMap(ui, 212, 62, 1200 - 297, 800 - 172, nyc);
+            nycMap = new NYCMap(ui, mapX, mapY, mapWidth, mapHeight, nyc);
             nycMap.render();
 
             dDot1 = new RedDot(ui,type, 505, 320,0);
@@ -172,11 +177,6 @@ public class Button
            
         }
 
-        else if(click == 4)
-        {
-            ui.image(black, 212, 62, 1200-297, 800-172);
-           
-        }
     }
 
     public void mouseClicked()

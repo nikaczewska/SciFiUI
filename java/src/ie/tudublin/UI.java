@@ -147,7 +147,7 @@ public class UI extends PApplet
         Magnus_Bane = new Downworlder(this,loadImage("Magnus_Bane.jpg"),"Magnus Bane","Warlock","West Beech Road, New York");
         Maia = new Downworlder(this, loadImage("Maia.png"),"Maia","Werewolf","South Cedarwood Street, New York");
         Luke_Garroway = new Downworlder(this, loadImage("Luke_Garroway.jpg"),"Luke Garroway","Werewolf","Border Road, Bronx");
-        Simon_Lewis = new Downworlder(this, loadImage("Simon_Lewis.jpg"),"Simon_Lewis","Vampire","Cleveland Avenue, Elmont");
+        Simon_Lewis = new Downworlder(this, loadImage("Simon_Lewis.jpg"),"Simon Lewis","Vampire","Cleveland Avenue, Elmont");
         Seelie_Queen = new Downworlder(this, loadImage("Seelie_Queen.png"),"Seelie Queen","Faerie","Eagle Street, Hempstead");
         Raphael_Santiago = new Downworlder(this, loadImage("Raphael_Santiago.jpg"),"Raphael Santiago","Vampire","Ridgeview St, Staten Island");
 

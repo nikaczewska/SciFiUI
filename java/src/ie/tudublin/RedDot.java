@@ -14,10 +14,6 @@ public class RedDot
     int TextY = 600;
     int gap = 20;
 
-    int rectX = ui.width- 988;
-    int rectY = ui.height - 250;
-    int rectWidth = ui.width - 295;
-    int rectHeight =  ui.height - 660;
     int width1 = 150;
     int height1 = 140;
     private int type; //1 is for Shadowhunters, 2 is for Demons, 3 is for Downworlders, 4 is for Runes
@@ -52,8 +48,8 @@ public class RedDot
                 if(type == 1)
                 {
                     ui.fill(0);
-                    ui.rect(rectX, rectY, rectWidth,rectHeight);
-                    ui.image(ui.shadowhunters.get(pos).shadowhunter, rectX, rectY, width1,height1);
+                    ui.rect(ui.width- 988, ui.height - 250, ui.width - 295, ui.height - 660);
+                    ui.image(ui.shadowhunters.get(pos).shadowhunter, ui.width - 988, ui.height - 250, width1,height1);
                     ui.textAlign(PApplet.LEFT,PApplet.LEFT);
                     ui.fill(255);
                     ui.text(("Name: " + ui.shadowhunters.get(pos).name), TextX, TextY);
@@ -64,8 +60,8 @@ public class RedDot
                 if(type == 2)
                 {
                     ui.fill(0);
-                    ui.rect(rectX, rectY, rectWidth, rectHeight);
-                    ui.image(ui.demons.get(pos).demon, rectX, rectY, width1, height1);
+                    ui.rect(ui.width- 988, ui.height - 250, ui.width - 295, ui.height - 660);
+                    ui.image(ui.demons.get(pos).demon, ui.width - 988, ui.height - 250, width1,height1);
                     ui.stroke(255);
                     ui.textAlign(PApplet.LEFT,PApplet.LEFT);
                     ui.fill(255);
@@ -79,8 +75,8 @@ public class RedDot
                 if(type == 3)
                 {
                     ui.fill(0);
-                    ui.rect(rectX, rectY, rectWidth, rectHeight);
-                    ui.image(ui.downworlders.get(pos).downworlder,rectX, rectY, width1, height1);
+                    ui.rect(ui.width- 988, ui.height - 250, ui.width - 295, ui.height - 660);
+                    ui.image(ui.downworlders.get(pos).downworlder, ui.width - 988, ui.height - 250, width1,height1);
                     ui.textAlign(PApplet.LEFT,PApplet.LEFT);
                     ui.fill(255);
                     ui.text(("Name: " + ui.downworlders.get(pos).name), TextX, TextY);
