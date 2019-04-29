@@ -18,6 +18,9 @@ public class UI extends PApplet
     int gap = 275;
     int buttonWidth = 100;
     int buttonHeight = 50;
+    int rectX = 200;
+    int rectY = 50;
+    int gap1 = 10;
 
     //Declaring variables to be used for class objects
     Button button1;
@@ -60,7 +63,9 @@ public class UI extends PApplet
 
     //Declaring variables for image height and width
     int RuneWidth = 80;
+    int RuneX = 100;
     int RuneHeight = 100;
+    int ImageHeight = height - 90; //height - 90;
 
 
     boolean[] keys = new boolean[1024];
@@ -172,20 +177,20 @@ public class UI extends PApplet
         background(0);
         stroke(66,206,244);
         fill(0);
-        rect(200,50, width - 275, height - 150);
+        rect(rectX,rectY,width - 275, height - 150);
         stroke(63,133,255);
-        rect(210,60, width - 295, height - 170);
+        rect(rectX + gap1, rectY + gap1, width - 295, height - 170);
 
         image(AngelicPower, width - 200, 70, RuneHeight, RuneHeight);
-        image(rune1.rune, 200, height - 90, RuneHeight,RuneWidth);
-        image(rune2.rune, 300, height - 90, RuneHeight,RuneWidth);
-        image(rune3.rune, 400, height - 90, RuneHeight, RuneWidth);
-        image(rune4.rune, 500, height - 90, RuneHeight, RuneWidth);
-        image(rune5.rune, 600, height - 90, RuneHeight,RuneWidth);
-        image(rune6.rune, 700, height - 90, RuneHeight, RuneWidth);
-        image(rune7.rune, 800, height - 90, RuneHeight, RuneWidth);
-        image(rune8.rune, 900, height - 90, RuneHeight, RuneWidth);
-        image(rune9.rune, 1000, height - 90, RuneHeight, RuneWidth);
+        image(rune1.rune, RuneX * 2, height - 90, RuneHeight,RuneWidth);
+        image(rune2.rune, RuneX * 3, height - 90, RuneHeight,RuneWidth);
+        image(rune3.rune, RuneX * 4, height - 90, RuneHeight, RuneWidth);
+        image(rune4.rune, RuneX * 5, height - 90, RuneHeight, RuneWidth);
+        image(rune5.rune, RuneX * 6, height - 90, RuneHeight,RuneWidth);
+        image(rune6.rune, RuneX * 7, height - 90, RuneHeight, RuneWidth);
+        image(rune7.rune, RuneX * 8, height - 90, RuneHeight, RuneWidth);
+        image(rune8.rune, RuneX * 9, height - 90, RuneHeight, RuneWidth);
+        image(rune9.rune, RuneX * 10, height - 90, RuneHeight, RuneWidth);
 
 
        // button1.update();
