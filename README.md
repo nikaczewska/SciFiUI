@@ -14,6 +14,7 @@ as well as demons on a map. As well as that, there will be a section which will 
 the runes used by Shadowhunters on a daily basis.   
 
 # Instructions
+
 It is quite simple to operate this UI. Only a mouse is needed.
 When the UI is first opened, the user will be able to see a big screen on the right hand side.
 There are four buttons to the left of the main screen.
@@ -134,13 +135,17 @@ The MouseClicked, render and update methods are called for each individual butto
 
 
 # What I am most proud of in the assignment
+
 I am most proud of the fact that I was able to somewhat re-create a user interface that was used in 
 a book/tv series that I am interested in. I was able to figure out the positioning of different shapes and images.
 Learning how to use images in processing and java proved to be very useful for me too, as most of the features
 implemented in my assignment are based on images.
 What took me the most time was figuring out how to get the MouseClicked methods to work so that once the map
-appeared on the screen it wouldn't disappear when I moved the mouse away from the certain button. 
+appeared on the screen it wouldn't disappear when I moved the mouse away from the certain button.
+It took a lot of figuring out and trial and error but eventually I was able to make the method work as desired. 
 Overcoming that problem brought me great joy and sped up the process of finishing the assignment.
+As well as that, learning how to access the different parts of each arraylist helped me get a better understanding
+of the Java programming language.
 
 
 # Markdown Tutorial
