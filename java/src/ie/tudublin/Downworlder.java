@@ -8,8 +8,9 @@ public class Downworlder
     PImage downworlder;
     String name;
     String type;
+    String location;
 
-    public Downworlder(UI ui, PImage downworlder, String name, String type)
+    public Downworlder(UI ui, PImage downworlder, String name, String type, String location)
     {
         this.ui = ui;
         this.downworlder = downworlder;
