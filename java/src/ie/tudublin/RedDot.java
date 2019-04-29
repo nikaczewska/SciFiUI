@@ -61,6 +61,7 @@ public class RedDot
                     ui.fill(255);
                     ui.text(("Name: " + ui.demons.get(pos).name), 500, 600);
                     ui.text(("Class: " + ui.demons.get(pos).type), 500, 620);
+                    ui.text(("Location: " + ui.demons.get(pos).location), 500, 640);
                 }
                     
                 }
