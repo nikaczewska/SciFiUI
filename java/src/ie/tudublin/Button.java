@@ -201,12 +201,6 @@ public class Button
                     click = 3;
                     type = 3;
                 }
-
-                if(text == "Runes")
-                {
-                    click = 4;
-                    type = 4;
-                }
                
             }
         }
