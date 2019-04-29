@@ -16,6 +16,7 @@ public class Downworlder
         this.downworlder = downworlder;
         this.name = name;
         this.type = type;
+        this.location = location;
     }
 
 

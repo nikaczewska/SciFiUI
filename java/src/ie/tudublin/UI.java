@@ -129,12 +129,12 @@ public class UI extends PApplet
         demons.add(demonVermithrall);
 
         //Loading all shadowhunter images from data folder and adding to shadowhunter arraylist
-        Alec_Lightwood = new Shadowhunter(this, loadImage("Alec_Lightwood.jpg"), "Alec Lightwood", "Shadowhunter");
-        Clary_Fray =  new Shadowhunter(this, loadImage("Clary_Fray.jpg"), "Clary Fray", "Shadowhunter");
-        Isabelle_Lightwood =  new Shadowhunter(this, loadImage("Isabelle_Lightwood.jpg"), "Isabelle Lightwood", "Shadowhunter");
-        Jace_Wayland =  new Shadowhunter(this, loadImage("Jace_Wayland.jpg"), "Jace Wayland", "Shadowhunter");
-        Sebastian_Verlac =  new Shadowhunter(this, loadImage("Sebastian_Verlac.jpg"), "Sebastian Verlac", "Shadowhunter");
-        Valentine_Morgenstern =  new Shadowhunter(this, loadImage("Valentine_Morgenstern.jpg"), "Valentine Morgenstern", "Shadowhunter");
+        Alec_Lightwood = new Shadowhunter(this, loadImage("Alec_Lightwood.jpg"), "Alec Lightwood", "Shadowhunter","Shadowhunter Institute, Manhattan");
+        Clary_Fray =  new Shadowhunter(this, loadImage("Clary_Fray.jpg"), "Clary Fray", "Shadowhunter", "Maple Street, Brooklyn");
+        Isabelle_Lightwood =  new Shadowhunter(this, loadImage("Isabelle_Lightwood.jpg"), "Isabelle Lightwood", "Shadowhunter", "Greenrose Street, Bronx");
+        Jace_Wayland =  new Shadowhunter(this, loadImage("Jace_Wayland.jpg"), "Jace Wayland", "Shadowhunter", "Woodland Avenue, Far Rockaway");
+        Sebastian_Verlac =  new Shadowhunter(this, loadImage("Sebastian_Verlac.jpg"), "Sebastian Verlac", "Shadowhunter", "Manhattan Street, Huntington Station");
+        Valentine_Morgenstern =  new Shadowhunter(this, loadImage("Valentine_Morgenstern.jpg"), "Valentine Morgenstern", "Shadowhunter", "Oakland Avenue, Westbury");
 
         shadowhunters.add(Alec_Lightwood);
         shadowhunters.add(Clary_Fray);
