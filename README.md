@@ -62,7 +62,75 @@ The location of each given shadowhunter will also be displayed along with their 
 
 # How it works
 
+In order to make this project work, I had to create multiple different classes. Each class had its own purpose.
+The classes were as follows:
+- Button /
+- Demon /
+- Downworlder /
+- Main / 
+- NYCMap /
+- RedDot /
+- Rune  /
+- Shadowhnter /
+- UI
 
+The purpose of the Main class is to run the program.
+
+The Demon, Downworlder and Shadowhnter classes are initially identical. 
+They all store the name, type, location and an image of a given character.
+I didn't use a single class for all of the characters as it was confusing to me and I kept getting mixed up.
+
+The Rune class stores an image of a certain rune. These are displayed on the screen.
+
+The NYCMap class takes in 6 parameters. Its purpose is to draw a map of New York City on the main screen.
+
+The RedDot class is used to display red dots on the map when the user clicks on one of the buttons labelled "Downworlders", "Shadowhunters" or "Demons".
+Each instance of the RedDot class stores the type of character and the position of the given character in its arraylist. 
+The types are as follows :
+- 1 -> Shadowhnter
+- 2 -> Demon
+- 3 -> Downworlder
+For example, if the type variable is 1 and the pos variable is set to 2, 
+this means that the character displayed on the screen will be the 3rd element of the shadowhunters arraylist.
+
+The Button class is used to draw three buttons on the screen. It contains a MouseClicked method. Depending on which button is clicked, the click variable is changed.
+An arraylist called redDots of type RedDot is created at the beginning.
+There are three different options associated with the MouseClicked method.
+If the "Shadowhnters" button is clicked the click variable is set to 1.
+The redDots arraylist is emptied of any contents.
+This then causes a new instance of the NYCMap class to be created. 
+As well as that, 6 new instances of the RedDot class are created. These will show up on the map and are linked to the shadowhunter arraylist.
+The red dots are added to an arraylist of type RedDot. The render and MouseClicked methods are called within each instance of the RedDot class.
+
+If the "Demons" button is clicked the click variable is set to 2.
+The redDots arraylist is emptied of any contents.
+A new instance of the NYCMap class is created and 6 new instances of the RedDot class are created. These will show up on the map.
+They are linked to the demons arraylist.
+The red dots are then added to an arraylist of type RedDot. The render and MouseClicked methods are called within each instance of the RedDot class.
+
+If the "Downworlders" button is clicked the click variable is set to 3.
+The redDots arraylist is emptied of any contents.
+A new instance of the NYCMap class is created. As well as that, 6 new instances of the RedDot class are created. These will show up on the map.
+The red dots are linked to the downworlders arraylist.
+The newly initialised red dots are then added to the redDots arraylist. The render and MouseClicked methods are called within each instance of the RedDot class.
+
+The UI class contains four arraylists:
+- runes of class Rune
+- shadowhunters of class Shadowhnter
+- demons of class Demon
+- downworlders of class Downworlder
+
+The runes arraylist stores 9 different images of runes which are displayed at the bottom of the screen.
+The shadowhunters arraylist stores 6 different shadowhunter characters. It stores an image, name, type and location of each character.
+The demons arraylist stores 6 different demon characters. It stores an image, name, type and location of each character.
+The downworlders arraylist stores 6 different downworlder characters. It stores an image, name, type and location of each character.
+
+All of the images needed in this assignment are loaded in the setup method of the UI class.
+The three buttons are also initialised in the setup.
+
+In the draw method, the two rectangles that make up the main screen are drawn.
+The arraylist of runes is used to draw 9 different images below the main screen.
+The MouseClicked, render and update methods are called for each individual button.
 
 
 

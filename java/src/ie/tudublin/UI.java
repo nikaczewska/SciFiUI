@@ -192,15 +192,12 @@ public class UI extends PApplet
         image(rune9.rune, RuneX * 10, height - 90, RuneHeight, RuneWidth);
 
 
-       // button1.update();
         button2.update();
         button3.update();
         button4.update();
-       // button1.render();
 		button2.render();
 		button3.render();
         button4.render();
-       // button1.mouseClicked();
         button2.mouseClicked();
         button3.mouseClicked();
         button4.mouseClicked();
