@@ -165,9 +165,9 @@ public class UI extends PApplet
 
         //Initialising buttons
        
-        button2 = new Button(this, buttonX, buttonY, buttonWidth,"Demons", nyc);
-		button3 = new Button(this, buttonX, buttonY + gap, buttonWidth, "Downworlders",nyc);
-        button4 = new Button(this, buttonX, buttonY + (gap*2), buttonWidth, "Shadowhunters",nyc);
+        button1 = new Button(this, buttonX, buttonY, buttonWidth,"Demons", nyc);
+		button2 = new Button(this, buttonX, buttonY + gap, buttonWidth, "Downworlders",nyc);
+        button3 = new Button(this, buttonX, buttonY + (gap*2), buttonWidth, "Shadowhunters",nyc);
 
     }
 
@@ -192,15 +192,15 @@ public class UI extends PApplet
         image(rune9.rune, RuneX * 10, height - 90, RuneHeight, RuneWidth);
 
 
+        button1.update();
         button2.update();
         button3.update();
-        button4.update();
+		button1.render();
 		button2.render();
-		button3.render();
-        button4.render();
+        button3.render();
+        button1.mouseClicked();
         button2.mouseClicked();
         button3.mouseClicked();
-        button4.mouseClicked();
 
     }
 
