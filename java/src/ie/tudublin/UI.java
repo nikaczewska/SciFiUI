@@ -114,12 +114,12 @@ public class UI extends PApplet
         nyc = loadImage("NewYork.jpg");
         black = loadImage("black.png");
         //Loading all demon images from data folder and adding the demon objects to demon arraylist
-        demonAbbadon = new Demon(this,loadImage("Demon_Abbadon.png"), "Abbadon", "Greater Demon");
-        demonBehemoth = new Demon(this, loadImage("Demon_Behemoth.png"), "Behemoth", "Lesser Demon");
-        demonHunger = new Demon(this,loadImage("Demon_Hunger.png"), "Hunger", "Greater Demon");
-        demonRaum = new Demon(this,loadImage("Demon_Raum.png"), "Raum", "Lesser Demon");
-        demonRavener = new Demon(this,loadImage("Demon_Ravener.jpg"), "Ravener", "Lesser Demon");
-        demonVermithrall = new Demon(this,loadImage("Demon_Vermithrall.png"), "Vermithrall", "Lesser Demon");
+        demonAbbadon = new Demon(this,loadImage("Demon_Abbadon.png"), "Abbadon", "Greater Demon","Plumb Branch Street, Astoria");
+        demonBehemoth = new Demon(this, loadImage("Demon_Behemoth.png"), "Behemoth", "Lesser Demon","Military Street, Bay Shore");
+        demonHunger = new Demon(this,loadImage("Demon_Hunger.png"), "Hunger", "Greater Demon","Fairway Court, New York");
+        demonRaum = new Demon(this,loadImage("Demon_Raum.png"), "Raum", "Lesser Demon","Willow Street, Spring Valley");
+        demonRavener = new Demon(this,loadImage("Demon_Ravener.jpg"), "Ravener", "Lesser Demon", "Fieldstone Street, Woodside");
+        demonVermithrall = new Demon(this,loadImage("Demon_Vermithrall.png"), "Vermithrall", "Lesser Demon", "Cactus Stret, Bronx");
 
         demons.add(demonAbbadon);
         demons.add(demonBehemoth);
