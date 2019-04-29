@@ -165,10 +165,9 @@ public class UI extends PApplet
 
         //Initialising buttons
        
-        //button1 = new Button(this, buttonX, buttonY + (gap*2), buttonWidth, "Runes", nyc, black);
-        button2 = new Button(this, buttonX, buttonY, buttonWidth,"Demons", nyc, black);
-		button3 = new Button(this, buttonX, buttonY + gap, buttonWidth, "Downworlders",nyc, black);
-        button4 = new Button(this, buttonX, buttonY + (gap*2), buttonWidth, "Shadowhunters",nyc, black);
+        button2 = new Button(this, buttonX, buttonY, buttonWidth,"Demons", nyc);
+		button3 = new Button(this, buttonX, buttonY + gap, buttonWidth, "Downworlders",nyc);
+        button4 = new Button(this, buttonX, buttonY + (gap*2), buttonWidth, "Shadowhunters",nyc);
 
     }
 

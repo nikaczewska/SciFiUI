@@ -15,7 +15,7 @@ public class Button
     private String text;
     NYCMap nycMap;
     PImage nyc;
-    PImage black;
+
 
     int mapX = 212;
     int mapY = 62;
@@ -43,7 +43,7 @@ public class Button
     RedDot dDot5;
     RedDot dDot6;
 
-    public Button(UI ui, int x, int y, int width, String text, PImage nyc, PImage black) 
+    public Button(UI ui, int x, int y, int width, String text, PImage nyc) 
     {
         this.ui = ui;
         this.x = x;
@@ -51,7 +51,6 @@ public class Button
         this.width = width;
         this.text = text;
         this.nyc = nyc;
-        this.black = black;
 	}
 
 	int click = 0;
