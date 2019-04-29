@@ -48,6 +48,7 @@ public class RedDot
                     ui.fill(255);
                     ui.text(("Name: " + ui.shadowhunters.get(pos).name), 500, 600);
                     ui.text(("Class: " + ui.shadowhunters.get(pos).type), 500, 620);
+                    ui.text(("Location: " + ui.shadowhunters.get(pos).location), 500, 640);
                 }
 
                 if(type == 2)
