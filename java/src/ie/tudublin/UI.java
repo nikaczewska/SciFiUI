@@ -14,8 +14,8 @@ public class UI extends PApplet
     ArrayList<Downworlder> downworlders = new ArrayList<Downworlder>();
 
     int buttonX = 75;
-    int buttonY = 70;
-    int gap = 200;
+    int buttonY = 95;
+    int gap = 275;
     int buttonWidth = 100;
     int buttonHeight = 50;
 
@@ -160,10 +160,10 @@ public class UI extends PApplet
 
         //Initialising buttons
        
-        button1 = new Button(this, buttonX, buttonY + (gap*2), buttonWidth, "Runes", nyc, black);
+        //button1 = new Button(this, buttonX, buttonY + (gap*2), buttonWidth, "Runes", nyc, black);
         button2 = new Button(this, buttonX, buttonY, buttonWidth,"Demons", nyc, black);
 		button3 = new Button(this, buttonX, buttonY + gap, buttonWidth, "Downworlders",nyc, black);
-        button4 = new Button(this, buttonX, buttonY + (gap*3), buttonWidth, "Shadowhunters",nyc, black);
+        button4 = new Button(this, buttonX, buttonY + (gap*2), buttonWidth, "Shadowhunters",nyc, black);
 
     }
 
@@ -188,19 +188,18 @@ public class UI extends PApplet
         image(rune9.rune, 1000, height - 90, RuneHeight, RuneWidth);
 
 
-        
-        button1.mouseClicked();
-        button2.mouseClicked();
-        button3.mouseClicked();
-        button4.mouseClicked();
-        button1.render();
-		button2.render();
-		button3.render();
-        button4.render();
-        button1.update();
+       // button1.update();
         button2.update();
         button3.update();
         button4.update();
+       // button1.render();
+		button2.render();
+		button3.render();
+        button4.render();
+       // button1.mouseClicked();
+        button2.mouseClicked();
+        button3.mouseClicked();
+        button4.mouseClicked();
 
     }
 
