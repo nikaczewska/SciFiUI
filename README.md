@@ -133,8 +133,15 @@ The arraylist of runes is used to draw 9 different images below the main screen.
 The MouseClicked, render and update methods are called for each individual button.
 
 
-
 # What I am most proud of in the assignment
+I am most proud of the fact that I was able to somewhat re-create a user interface that was used in 
+a book/tv series that I am interested in. I was able to figure out the positioning of different shapes and images.
+Learning how to use images in processing and java proved to be very useful for me too, as most of the features
+implemented in my assignment are based on images.
+What took me the most time was figuring out how to get the MouseClicked methods to work so that once the map
+appeared on the screen it wouldn't disappear when I moved the mouse away from the certain button. 
+Overcoming that problem brought me great joy and sped up the process of finishing the assignment.
+
 
 # Markdown Tutorial
 
