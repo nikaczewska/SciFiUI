@@ -14,6 +14,49 @@ as well as demons on a map. As well as that, there will be a section which will 
 the runes used by Shadowhunters on a daily basis.   
 
 # Instructions
+It is quite simple to operate this UI. Only a mouse is needed.
+When the UI is first opened, the user will be able to see a big screen on the right hand side.
+There are four buttons to the left of the main screen.
+They are labelled 
+- "Demons"
+- "Downworlders"
+- "Runes"
+- "Shadowhunters" 
+
+When the user clicks on the "Demons" button, a map of New York City will be displayed within the main screen area.
+Multiple red dots will appear scattered around the map. Each dot is linked to an instance of the Demon class.
+When the user hovers over a red doth, a picture will appear in a black rectangle at the bottom of the screen.
+This will be accessed through the demons arraylist which is initialised in the UI class.
+To the right of the image, the user will be able to see the name of the Demon as well as its type.
+There are two types of demons
+- "Lesser Demon"
+- "Greater Demon"
+These details will also be accessed through the demons arraylist.
+The location of the given demon will also be displayed on the screen.
+
+
+When the user clicks on the "Downworlders" button, a map will be displayed within the main screen area.
+A few red dots will appear on the map in different locations. Each red dot is linked to an instance of the Downworlder class.
+When the user hovers over a red dot, a picture showing the given Downworlder will appear on the bottom of the screen.
+This will be accessed through the downworlders arraylist which, like the demons arraylist, is also initialised in the UI class.
+Beside the image the user will see the name of the given Downworlder, as well as their class.
+These will be accessed through the downworlders arraylist.
+The classes are as follows
+- "Werewolf"
+- "Faerie"
+- "Vampire"
+- "Warlock"
+The location of each downworlder will be displayed along with their name and class.
+
+
+When the user clicks on the "Shadowhunters" button, a map will be displayed within the main screen area.
+There will be a few red dots on the map. Each red dot is linked to an instance of the Shadowhnter class.
+When the user hovers over a red dot, a picture showing the given Shadowhunter will appear.
+This will be accessed through the shadowhunters arraylist which is initialised in the UI class.
+As well as the image, the name and class of the given Shadowhnter will appear next to the image.
+These details will also be accessed through the shadowhunters arraylist in the UI class.
+The location of each given shadowhunter will also be displayed along with their picture and details.
+
 
 
 
