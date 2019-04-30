@@ -149,7 +149,6 @@ of the Java programming language.
 
 # YouTube video of the assignment
 
-
 [![YouTube] (http://img.youtube.com/vi/P1EE7Hpr-1s/0.jpg)](https://www.youtube.com/watch?v=PlEE7Hpr-1s&feature=youtu.be)
 
 
