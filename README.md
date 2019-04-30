@@ -148,7 +148,6 @@ As well as that, learning how to access the different parts of each arraylist he
 of the Java programming language.
 
 #YouTube video of the assignment
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
 
 [![YouTube] (https://img.www.youtube.com/watch?v=PlEE7Hpr-1s&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=PlEE7Hpr-1s&feature=youtu.be)
 
