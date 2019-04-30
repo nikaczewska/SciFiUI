@@ -65,14 +65,14 @@ The location of each given shadowhunter will also be displayed along with their 
 
 In order to make this project work, I had to create multiple different classes. Each class had its own purpose.
 The classes were as follows:
-- Button /
-- Demon /
-- Downworlder /
-- Main / 
-- NYCMap /
-- RedDot /
-- Rune  /
-- Shadowhnter /
+- Button 
+- Demon 
+- Downworlder 
+- Main 
+- NYCMap 
+- RedDot 
+- Rune  
+- Shadowhnter 
 - UI
 
 The purpose of the Main class is to run the program.
@@ -149,7 +149,7 @@ of the Java programming language.
 
 #YouTube video of the assignment
 
-[![YouTube] (https://img.www.youtube.com/watch?v=PlEE7Hpr-1s&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=PlEE7Hpr-1s&feature=youtu.be)
+[![YouTube] (UI.PNG)](https://www.youtube.com/watch?v=PlEE7Hpr-1s&feature=youtu.be)
 
 
 # Markdown Tutorial
