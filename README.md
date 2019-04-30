@@ -149,7 +149,6 @@ of the Java programming language.
 
 # Images of assignment
 
-![Image 1](images/Screen1.PNG)
 ![Image 2] (images/Screen2.PNG)
 ![Image 3] (images/Screen3.png)
 
@@ -157,7 +156,7 @@ of the Java programming language.
 
 # YouTube video of the assignment
 
-[![YouTube] (https://i.ytimg.com/vi/PlEE7Hpr-1s/1.jpg)](https://www.youtube.com/watch?v=PlEE7Hpr-1s&feature=youtu.be)
+[![YouTube] ( https://i.ytimg.com/vi/PlEE7Hpr-1s/1.jpg)]
 
 
 # Markdown Tutorial
