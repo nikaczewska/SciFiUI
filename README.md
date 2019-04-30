@@ -149,7 +149,7 @@ of the Java programming language.
 
 # YouTube video of the assignment
 
-[![YouTube] (UI.PNG)](https://www.youtube.com/watch?v=PlEE7Hpr-1s&feature=youtu.be)
+[![YouTube] (images/UI.PNG)](https://www.youtube.com/watch?v=PlEE7Hpr-1s&feature=youtu.be)
 
 
 # Markdown Tutorial
