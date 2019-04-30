@@ -147,16 +147,15 @@ Overcoming that problem brought me great joy and sped up the process of finishin
 As well as that, learning how to access the different parts of each arraylist helped me get a better understanding
 of the Java programming language.
 
-# Images of assignment
+# Image of assignment
 
-![Image 2] (images/Screen2.PNG)
-![Image 3] (images/Screen3.png)
+![Image 1](images/Screen1.PNG)
 
 
 
 # YouTube video of the assignment
 
-[![YouTube] ( https://i.ytimg.com/vi/PlEE7Hpr-1s/1.jpg)]
+[![YouTube] (images/Screen1.PNG)](https://www.youtube.com/watch?v=PlEE7Hpr-1s&feature=youtu.be)
 
 
 # Markdown Tutorial
