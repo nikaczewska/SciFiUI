@@ -147,9 +147,10 @@ Overcoming that problem brought me great joy and sped up the process of finishin
 As well as that, learning how to access the different parts of each arraylist helped me get a better understanding
 of the Java programming language.
 
-#YouTube video of the assignment
+# YouTube video of the assignment
 
-[![YouTube] (UI.PNG)](https://www.youtube.com/watch?v=PlEE7Hpr-1s&feature=youtu.be)
+
+[![YouTube] (http://img.youtube.com/vi/P1EE7Hpr-1s/0.jpg)](https://www.youtube.com/watch?v=PlEE7Hpr-1s&feature=youtu.be)
 
 
 # Markdown Tutorial
